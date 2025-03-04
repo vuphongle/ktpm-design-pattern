@@ -15,6 +15,6 @@ public class Main {
         NhanVien nhanVien = new NhanVien(name, age, chucVu);
 
         // In ra thông tin và công việc của nhân viên
-        nhanVien.printCongViec();
+        nhanVien.printCongViec(new DoiTruongState());
     }
 }

@@ -42,7 +42,7 @@ public class NhanVien {
     }
 
     // Phương thức in ra công việc dựa trên chức vụ hiện tại
-    public void printCongViec() {
+    public void printCongViec(CongViecState congViecState) {
         System.out.println("Nhân viên: " + name);
         System.out.println("Tuổi: " + age);
         System.out.println("Chức vụ: " + chucVu);
