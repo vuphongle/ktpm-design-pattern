@@ -1,26 +1,23 @@
 package vn.edu.iuh.fit;
 
-public class NhanVien {
-    // Các thuộc tính của nhân viên
+public class Employee {
     String name;
     int age;
-    String chucVu;
+    String position;
 
-    // Constructor để khởi tạo các giá trị cho nhân viên
-    public NhanVien(String name, int age, String chucVu) {
+    public Employee(String name, int age, String position) {
         this.name = name;
         this.age = age;
-        this.chucVu = chucVu;
+        this.position = position;
     }
 
-    // Phương thức in ra công việc dựa trên chức vụ
     public void printCongViec() {
         System.out.println("Nhân viên: " + name);
         System.out.println("Tuổi: " + age);
-        System.out.println("Chức vụ: " + chucVu);
+        System.out.println("Chức vụ: " + position);
         System.out.println("Công việc:");
 
-        switch (chucVu) {
+        switch (position) {
             case "Đội Trưởng":
                 System.out.println("- Quản lý công việc của đội.");
                 System.out.println("- Phân công nhiệm vụ cho các thành viên trong đội.");
