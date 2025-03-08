@@ -1,20 +1,17 @@
 package vn.edu.iuh.fit;
 
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Employee employee1 = new Employee("Nguyen Thi Mai", 28, "Director");
 
-        // Thông tin nhân viên
-        String name = "Nguyen Van A";
-        int age = 30;
-        String chucVu = "Đội Trưởng";
+        employee1.printJobDetails();
 
-        // Tạo đối tượng nhân viên
-        NhanVien nhanVien = new NhanVien(name, age, chucVu);
+        System.out.println("\nChanging position to 'Team Leader':");
+        employee1.setPosition("Team Leader");
+        employee1.printJobDetails();
 
-        // In ra thông tin và công việc của nhân viên
-        nhanVien.printCongViec(new DoiTruongState());
+        System.out.println("\nChanging position to 'Office Employee':");
+        employee1.setPosition("Office Employee");
+        employee1.printJobDetails();
     }
 }
